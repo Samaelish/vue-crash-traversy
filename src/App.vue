@@ -1,15 +1,9 @@
-<script>
-export default {
-  data() {
-    return {
-      name: 'John Doe',
-      status: true
-    }
-  }
-}
+<script setup>
+import Navbar from '@/components/Navbar.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <h1>Hello {{ name }}</h1>
-  <p v-if="status">User whouser</p>
+  <Navbar />
+  <RouterView />
 </template>
